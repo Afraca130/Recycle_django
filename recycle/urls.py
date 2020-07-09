@@ -19,5 +19,6 @@ from user.views import index, RegisterView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index),
     path('register/', RegisterView.as_view()),
 ]
